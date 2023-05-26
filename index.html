@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <title>ToDo List</title>
+</head>
+<body>
+  <header>
+    <input type="text" placeholder="ToDo List" class="title" value="ToDo List">
+  </header>
+  <main>
+    <div class="wrapper">
+      <form id="task-form">
+          <input type="text" id="inputTask" class="inputTask" placeholder="Что мы хотим сегодня сделать?">
+          <button id="addTask" class="addTask">Добавить</button>
+      </form>
+        <ul id="list-container"></ul>
+      <div class="button-wrapper" id="button-wrapper">
+        <button class="deleteAllChecked">Удалить завершенные</button>
+        <button class="deleteAll">Удалить все</button>
+      </div>
+    </div>
+  </main> 
+  <script type="module" src="./script/script.js"></script>
+</body>
+</html>
